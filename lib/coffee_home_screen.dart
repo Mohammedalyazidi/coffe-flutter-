@@ -209,7 +209,13 @@ class CoffeeHomeScreen extends StatelessWidget {
             child: Image.asset(imagePath, height: 100, width: double.infinity, fit: BoxFit.cover),
           ),
           const SizedBox(height: 8),
-          Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
+          Text(
+            title,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black, // <-- Title color set to black
+            ),
+          ),
           Text(subtitle, style: const TextStyle(color: Colors.grey)),
           const Spacer(),
           Row(
